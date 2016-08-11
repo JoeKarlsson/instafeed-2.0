@@ -22,12 +22,10 @@ export class PhotoListComponent implements OnInit {
 
   onSetGrid(e) {
     this.grid = true;
-    console.log('this.grid: ', this.grid);
   }
 
   onSetList(e) {
     this.grid = false;
-    console.log('this.grid: ', this.grid);
   }
 
   ngOnInit() {

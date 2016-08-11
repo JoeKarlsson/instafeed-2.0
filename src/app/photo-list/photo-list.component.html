@@ -10,7 +10,7 @@
   <li *ngFor="let photo of photos">
     <app-photo
       [link]="photo.link"
-      [thumbnail]="photo.images.thumbnail.url">
+      [thumbnail]="photo.images.low_resolution.url">
     </app-photo>
   </li>
 </ul>
