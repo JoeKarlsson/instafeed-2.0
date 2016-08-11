@@ -1,7 +1,7 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
 # Config Files
-/src/instagramAPIConfig.js
+/src/app/instaConfig.ts
 
 # compiled output
 /dist

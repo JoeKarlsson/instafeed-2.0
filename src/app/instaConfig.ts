@@ -1,4 +1,0 @@
-export const CONFIG = {
-  USER_ID: "464793431",
-  ACCESS_TOKEN: "464793431.64a12cb.9e7f0e0fd8ba4361be3205810e02cb73"
-};
