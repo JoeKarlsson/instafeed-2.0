@@ -2,11 +2,26 @@
 <div class="bar">
     <!-- These two buttons switch the layout variable,
          which causes the correct UL to be shown. -->
-    <a class="list-icon"></a>
-    <a class="grid-icon"></a>
+    <a class="list-icon" (click)="onSetList()"></a>
+    <a class="grid-icon" (click)="onSetGrid()"></a>
 </div>
-<ul class="grid">
+<ul class="grid" *ngIf="grid">
+  <!-- A view wtih big Photos and no text -->
   <li *ngFor="let photo of photos">
-    <app-photo [link]="photo.link" [caption]="photo.caption.text" [thumbnail]="photo.images.thumbnail.url"></app-photo>
+    <app-photo
+      [link]="photo.link"
+      [thumbnail]="photo.images.thumbnail.url">
+    </app-photo>
+  </li>
+</ul>
+
+<ul class="list" *ngIf="!grid">
+    <!-- A compact view smaller photos and titles -->
+    <li *ngFor="let photo of photos">
+    <app-photo
+      [link]="photo.link"
+      [caption]="photo.caption.text"
+      [thumbnail]="photo.images.thumbnail.url">
+    </app-photo>
   </li>
 </ul>

@@ -1,3 +1,7 @@
+/*-------------------------
+  Grid layout
+--------------------------*/
+
 ul.grid{
   list-style: none;
   width: 510px;
@@ -16,6 +20,37 @@ ul.grid li img{
   display:block;
   border:none;
 }
+
+/*-------------------------
+  List layout
+--------------------------*/
+
+ul.list{
+  list-style: none;
+  width: 500px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+ul.list li{
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+  overflow: hidden;
+}
+
+ul.list li img{
+  width:120px;
+  height:120px;
+  float:left;
+  border:none;
+}
+
+ul.list li p{
+  margin-left: 135px;
+  font-weight: bold;
+  color:#6e7a7f;
+}
+
 
 .bar{
   background-color:#5c9bb7;
