@@ -1,6 +1,10 @@
-<p>
-  photo-list works!
-</p>
+
+<div class="bar">
+    <!-- These two buttons switch the layout variable,
+         which causes the correct UL to be shown. -->
+    <a class="list-icon"></a>
+    <a class="grid-icon"></a>
+</div>
 <ul class="grid">
   <li *ngFor="let photo of photos">
     <app-photo [link]="photo.link" [caption]="photo.caption.text" [thumbnail]="photo.images.thumbnail.url"></app-photo>

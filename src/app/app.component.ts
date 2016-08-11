@@ -9,5 +9,5 @@ import { PhotoListComponent } from './photo-list';
   directives: [PhotoListComponent]
 })
 export class AppComponent {
-  title = 'app works!';
+  title = 'Angular 2 Instafeed';
 }

@@ -22,8 +22,8 @@ export class InstaAPIService {
 
   getPhotos(): Observable<any> {
     return this.jsonp.get(this.instaURL)
-                    .map(this.extractData)
-                    .catch(this.handleError);
+      .map(this.extractData)
+      .catch(this.handleError);
   }
 
   private extractData(res: Response) {
