@@ -4,12 +4,13 @@ import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/catch';
 import { PhotoListComponent } from './photo-list';
+import { CONFIG } from './instaConfig';
 
 @Injectable()
 export class InstaAPIService {
 
-  private user_id: string = '464793431';
-  private access_token: string = '464793431.64a12cb.9e7f0e0fd8ba4361be3205810e02cb73';
+  private user_id: string = CONFIG.USER_ID;
+  private access_token: string = CONFIG.ACCESS_TOKEN;
 
   constructor (private jsonp: Jsonp) {}
 
@@ -21,6 +22,7 @@ export class InstaAPIService {
     '&access_token=' + this.access_token;
 
   getPhotos(): Observable<any> {
+    console.log('CONFIG: ', CONFIG);
     return this.jsonp.get(this.instaURL)
       .map(this.extractData)
       .catch(this.handleError);
@@ -28,7 +30,6 @@ export class InstaAPIService {
 
   private extractData(res: Response) {
     let body = res.json();
-    console.log('body: ', body);
     return body.data || { };
   }
 
