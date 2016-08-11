@@ -8,7 +8,9 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class PhotoComponent implements OnInit {
 
-  @Input() name: string;
+  @Input() link:string;
+  @Input() caption:string;
+  @Input() thumbnail:string;
 
   constructor() { }
 

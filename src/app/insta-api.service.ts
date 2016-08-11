@@ -21,7 +21,6 @@ export class InstaAPIService {
     '&access_token=' + this.access_token;
 
   getPhotos(): Observable<any> {
-    console.log(' instaURL: ',  this.instaURL);
     return this.jsonp.get(this.instaURL)
                     .map(this.extractData)
                     .catch(this.handleError);

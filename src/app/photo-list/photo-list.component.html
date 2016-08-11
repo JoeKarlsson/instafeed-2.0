@@ -3,6 +3,6 @@
 </p>
 <ul>
   <li *ngFor="let photo of photos">
-    <app-photo [name]="photo.name"></app-photo>
+    <app-photo [link]="photo.link" [caption]="photo.caption.text" [thumbnail]="photo.images.thumbnail.url"></app-photo>
   </li>
 </ul>
