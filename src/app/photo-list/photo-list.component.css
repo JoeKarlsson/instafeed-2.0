@@ -1,0 +1,18 @@
+ul.grid{
+  list-style: none;
+  width: 570px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+ul.grid li{
+  padding: 2px;
+  float:left;
+}
+
+ul.grid li img{
+  width:280px;
+  height:280px;
+  display:block;
+  border:none;
+}

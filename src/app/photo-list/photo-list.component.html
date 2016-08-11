@@ -1,7 +1,7 @@
 <p>
   photo-list works!
 </p>
-<ul>
+<ul class="grid">
   <li *ngFor="let photo of photos">
     <app-photo [link]="photo.link" [caption]="photo.caption.text" [thumbnail]="photo.images.thumbnail.url"></app-photo>
   </li>
