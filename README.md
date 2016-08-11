@@ -1,9 +1,8 @@
 # InstaFeed2
 
 Made by Joe Carlson - 2016
-See more at www.callmejoe.net
 
-Basic example usage of factory method to make a request to the instagram api to get a certian amount of images with an Angular.js switchable grid.
+See more at www.callmejoe.net
 
 ###Update
 This project has been converted into an NPM package [Check it out here.](https://www.npmjs.com/package/angular-instafeed)
@@ -27,7 +26,7 @@ This project has been converted into an NPM package [Check it out here.](https:/
 * Once you have these, navigate to `src/app/instaConfig.js` and configure your `client_id` and your `user_id`
 * Run the app anyway your usually run your web apps. Or open ```index.html`` in the browser.
 
-**Note:** If you are instested in installing this via NPM, I got cha covered. [Check it out here.](https://www.npmjs.com/package/angular-instafeed)
+**Note:** If you are insterested in installing this via NPM, I got cha covered. [Check it out here.](https://www.npmjs.com/package/angular-instafeed)
 
 ##Contributing
 1. Fork it!
