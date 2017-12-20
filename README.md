@@ -1,5 +1,7 @@
 # InstaFeed2
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/JoeKarlsson/instafeed-2.0.svg)](https://greenkeeper.io/)
+
 Made by Joe Carlson - 2016
 
 See more at www.callmejoe.net
